@@ -1,0 +1,90 @@
+From 801760a01ba7cce2d2c0d02f704c75bd36adceae Mon Sep 17 00:00:00 2001
+From: Muhammad Herdiansyah <herdiansyah@netc.eu>
+Date: Fri, 9 Nov 2018 17:12:47 +0700
+Subject: [PATCH] Distro: Add support for OpenMandriva Lx
+
+---
+ neofetch | 61 +++++++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 45 insertions(+), 16 deletions(-)
+
+diff --git a/neofetch b/neofetch
+index 326220d8..c817e469 100755
+--- a/neofetch
++++ b/neofetch
+@@ -6584,6 +6584,27 @@ o00.              k0O${c2}dddddd${c1}occ
+ EOF
+         ;;
+ 
++        "Mandriva"*)
++            set_colors 4 3
++            read -rd '' ascii_data <<'EOF'
++${c2}                        ``
++                       `-.
++${c1}      `               ${c2}.---
++${c1}    -/               ${c2}-::--`
++${c1}  `++    ${c2}`----...```-:::::.
++${c1} `os.      ${c2}.::::::::::::::-```     `  `
++${c1} +s+         ${c2}.::::::::::::::::---...--`
++${c1}-ss:          ${c2}`-::::::::::::::::-.``.``
++${c1}/ss-           ${c2}.::::::::::::-.``   `
++${c1}+ss:          ${c2}.::::::::::::-
++${c1}/sso         ${c2}.::::::-::::::-
++${c1}.sss/       ${c2}-:::-.`   .:::::
++${c1} /sss+.    ${c2}..`${c1}  `--`    ${c2}.:::
++${c1}  -ossso+/:://+/-`        ${c2}.:`
++${c1}    -/+ooo+/-.              ${c2}`
++EOF
++        ;;
++
+         "Manjaro"*)
+             set_colors 2 7
+             read -rd '' ascii_data <<'EOF'
+@@ -7010,24 +7031,32 @@ h+`      `.-:+oyyyo/-`
+ EOF
+         ;;
+ 
++
+         "OpenMandriva"*)
+-            set_colors 4 3
++            set_colors 4
+             read -rd '' ascii_data <<'EOF'
+-${c2}                        ``
+-                       `-.
+-${c1}      `               ${c2}.---
+-${c1}    -/               ${c2}-::--`
+-${c1}  `++    ${c2}`----...```-:::::.
+-${c1} `os.      ${c2}.::::::::::::::-```     `  `
+-${c1} +s+         ${c2}.::::::::::::::::---...--`
+-${c1}-ss:          ${c2}`-::::::::::::::::-.``.``
+-${c1}/ss-           ${c2}.::::::::::::-.``   `
+-${c1}+ss:          ${c2}.::::::::::::-
+-${c1}/sso         ${c2}.::::::-::::::-
+-${c1}.sss/       ${c2}-:::-.`   .:::::
+-${c1} /sss+.    ${c2}..`${c1}  `--`    ${c2}.:::
+-${c1}  -ossso+/:://+/-`        ${c2}.:`
+-${c1}    -/+ooo+/-.              ${c2}`
++${c1}                  ``````
++            `-:/+++++++//:-.`
++         .:+++oooo+/:.``   ``
++      `:+ooooooo+:.  `-:/++++++/:.`
++     -+oooooooo:` `-++o+/::::://+o+/-
++   `/ooooooooo-  -+oo/.`        `-/oo+.
++  `+ooooooooo.  :os/`              .+so:
++  +sssssssss/  :ss/                 `+ss-
++ :ssssssssss`  sss`                  .sso
++ ossssssssss  `yyo                    sys
++`sssssssssss` `yys                   `yys
++`sssssssssss:  +yy/                  +yy:
++ oyyyyyyyyyys. `oyy/`              `+yy+
++ :yyyyyyyyyyyo. `+yhs:.         `./shy/
++  oyyyyyyyyyyys:` .oyhys+:----/+syhy+. `
++  `syyyyyyyyyyyyo-` .:osyhhhhhyys+:``.:`
++   `oyyyyyyyyyyyyys+-`` `.----.```./oo.
++     /yhhhhhhhhhhhhhhyso+//://+osyhy/`
++      `/yhhhhhhhhhhhhhhhhhhhhhhhhy/`
++        `:oyhhhhhhhhhhhhhhhhhhyo:`
++            .:+syhhhhhhhhys+:-`
++                 ``....``
+ EOF
+         ;;
+ 
