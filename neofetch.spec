@@ -8,6 +8,8 @@ License:	MIT
 Group:		Shells
 Url:		https://github.com/dylanaraps/neofetch
 Source0:	https://github.com/dylanaraps/neofetch/archive/%{version}/%{name}-%{version}.tar.gz
+# This patch add support for OpenMandriva Lx. More https://github.com/dylanaraps/neofetch/issues/1116 (penguin)
+Patch0:   openmandriva-support.patch
 BuildArch: 	noarch
 
 %description
@@ -17,6 +19,7 @@ image, your OS logo, or any ascii file of your choice.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %make
