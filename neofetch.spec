@@ -20,7 +20,7 @@ image, your OS logo, or any ascii file of your choice.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %make_build
