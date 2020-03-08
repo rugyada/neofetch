@@ -29,6 +29,6 @@ image, your OS logo, or any ascii file of your choice.
 %make_install
 
 %files
-%doc README.md CHANGELOG.md LICENSE.md
+%doc README.md LICENSE.md
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
