@@ -2,7 +2,7 @@
 
 Summary:	Neofetch is a CLI system information tool written in BASH
 Name:		neofetch
-Version:	6.1.0
+Version:	7.0.0
 Release:	1
 License:	MIT
 Group:		Shells
