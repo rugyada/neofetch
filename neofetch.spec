@@ -2,12 +2,13 @@
 
 Summary:	Neofetch is a CLI system information tool written in BASH
 Name:		neofetch
-Version:	7.1.0
+Version:	7.1.0.1
 Release:	1
 License:	MIT
 Group:		Shells
 Url:		https://github.com/dylanaraps/neofetch
-Source0:	https://github.com/dylanaraps/neofetch/archive/%{version}/%{name}-%{version}.tar.gz
+#Source0:	https://github.com/dylanaraps/neofetch/archive/%{version}/%{name}-%{version}.tar.gz
+Source:%{name}-%version.tar.gz
 # This patch add support for OpenMandriva Lx. More https://github.com/dylanaraps/neofetch/issues/1116 (penguin)
 # Merged in upstream. So disable it for now.
 #Patch0:   openmandriva-support.patch
