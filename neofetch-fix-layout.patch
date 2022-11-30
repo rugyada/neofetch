@@ -1,0 +1,50 @@
+diff -urN neofetch-7.1.0/neofetch neofetch-7.1.0.1/neofetch
+--- neofetch-7.1.0/neofetch	2020-08-02 20:37:41.000000000 +0200
++++ neofetch-7.1.0.1/neofetch	2022-11-25 12:06:31.000000000 +0200
+@@ -54,20 +54,35 @@
+ # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
+ print_info() {
+     info title
+-    info underline
++    prin "$(color 7)┌───────────────────────────────────────┐"
+ 
+     info "OS" distro
+     info "Host" model
+     info "Kernel" kernel
++
++    prin
++
+     info "Uptime" uptime
+     info "Packages" packages
++
++    prin
++
+     info "Shell" shell
++
++    prin
++
+     info "Resolution" resolution
+     info "DE" de
++
++    prin
++
+     info "WM" wm
+     info "WM Theme" wm_theme
+     info "Theme" theme
+     info "Icons" icons
++
++    prin
++
+     info "Terminal" term
+     info "Terminal Font" term_font
+     info "CPU" cpu
+@@ -86,7 +101,9 @@
+     # info "Users" users
+     # info "Locale" locale  # This only works on glibc systems.
+ 
+-    info cols
++    info cols
++    prin "$(color 7)└───────────────────────────────────────┘"
+ }
+ 
+ # Title
